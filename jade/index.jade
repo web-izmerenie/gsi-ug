@@ -1,7 +1,7 @@
 doctype
 html(lang="ru")
 	head
-		title default jade
+		title ГидроСтройИзоляция
 		meta(charset="utf-8")
 		meta(name="viewport",content-width="width=device-width")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
@@ -9,8 +9,17 @@ html(lang="ru")
 		meta(name="keywords" content="")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 	body
-		div.wrapper
+		.wrapper
 			header
+				.wrapper
+					img(src="../img/logo.png")
+					nav#menu
+						ul
+							li: a(href="#") Услуги
+							li: a(href="#") Технологии
+							li: a(href="#") Акция
+							li: a(href="#") Контакты
+					a.btn(href="#form") Отправить заявку
 			main.content
 			footer
 		
