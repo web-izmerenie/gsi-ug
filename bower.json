@@ -1,0 +1,11 @@
+{
+  "name": "gidrostroy",
+  "version": "1.0.0",
+  "authors": [
+    "Andrey Chechkin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

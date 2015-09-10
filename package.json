@@ -1,0 +1,22 @@
+{
+  "name": "gidrostroy",
+  "version": "1.0.0",
+  "description": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "^3.0.3",
+    "gulp-rename": "^1.2.2"
+  },
+  "scripts": {
+    "postinstall": "bower install && gulp"
+  },
+  "author": "Andrey Chechkin",
+  "license": "ISC"
+}
