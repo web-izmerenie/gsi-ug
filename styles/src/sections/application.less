@@ -17,25 +17,32 @@
 		text-align: center;
 
 		> ul{
-			margin-top: 40px;
+			margin-top: 55px;
 			display: table;
 			width: 100%;
+			@-moz-document url-prefix() {
+				&{
+					margin-top: 40px;
+				}
+			}
 
 			> li{
 				width: 33%;
 				display: table-cell;
-				position: relative;
 
 				.hover{
-					cursor: pointer;
-					display: table;
-					margin: 0px auto;
 					position: relative;
 
-					p{
-						font-size: 24px;
-						color: #2c2c2e;
-						line-height: 22px;
+					.text{
+						cursor: pointer;
+						display: table;
+						margin: 0px auto;
+
+						p{
+							font-size: 24px;
+							color: #2c2c2e;
+							line-height: 22px;
+						}
 					}
 				}//hover
 
@@ -47,6 +54,7 @@
 					border-radius: 16px;
 					width: 83%;
 					height: 322px;
+					animation-duration: 0.3s;
 
 					ul{
 						display: table-cell;
@@ -73,6 +81,7 @@
 						}
 					}
 				}//hide
+				.zoomIn{display: table}
 			}//li
 		}//ul
 	}//wrapper

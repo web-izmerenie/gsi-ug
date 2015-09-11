@@ -25,6 +25,7 @@ robots.txt
 smsc
 html
 styles/build
+scripts/build
 
 # bitrix tmp dirs
 bitrix/cache

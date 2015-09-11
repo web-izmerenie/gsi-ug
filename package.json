@@ -4,6 +4,7 @@
   "description": "1.0.0",
   "main": "gulpfile.js",
   "dependencies": {
+    "coffeeify": "^1.1.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
     "gulp-browserify": "^0.5.1",
