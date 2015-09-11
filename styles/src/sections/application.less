@@ -1,0 +1,80 @@
+/*
+ * Styles from section applications
+ *
+ * @author Andrey Chechkin
+ * @license GNU/AGPLv3
+ * @see {@link https://www.gnu.org/licenses/agpl-3.0.txt|License}
+ */
+
+@import "../mixins.less";
+
+#application{
+	background-image: linear-gradient(to bottom, #E7E6E4 0%, #F2F2F0 100%);
+
+	.wrapper{
+		max-width: 1320px;
+		padding: 30px 0px 69px;
+		text-align: center;
+
+		> ul{
+			margin-top: 40px;
+			display: table;
+			width: 100%;
+
+			> li{
+				width: 33%;
+				display: table-cell;
+				position: relative;
+
+				.hover{
+					cursor: pointer;
+					display: table;
+					margin: 0px auto;
+					position: relative;
+
+					p{
+						font-size: 24px;
+						color: #2c2c2e;
+						line-height: 22px;
+					}
+				}//hover
+
+				.hide{
+					display: none;
+					.absoluteCenter();
+					top: -30px;
+					background: #FFF;
+					border-radius: 16px;
+					width: 83%;
+					height: 322px;
+
+					ul{
+						display: table-cell;
+						vertical-align: middle;
+
+						li{
+							color: #2c2c2e;
+							font-size: 16px;
+							line-height: 1;
+							font-family: robotto-thin;
+							padding-bottom: 8px;
+
+							&:after{
+								content: "";
+								width: 73px;
+								border-bottom: 1px solid #e6e5e3;
+								display: block;
+								margin: 0 auto;
+								padding-top: 10px;
+							}
+							&:last-child:after{
+								border: none;
+							}
+						}
+					}
+				}//hide
+			}//li
+		}//ul
+	}//wrapper
+
+	}//application

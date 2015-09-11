@@ -24,6 +24,7 @@ bitrix/templates/main/styles/src/sprites
 robots.txt
 smsc
 html
+styles/build
 
 # bitrix tmp dirs
 bitrix/cache

@@ -9,16 +9,13 @@
 @import "../mixins.less";
 
 header{
-	@height: 85px;
+	@height: 86px;
 
 	background: #fff;
 	height: @height;
+	padding-bottom: 2px;
 
 	.wrapper{
-		width: 90%;
-		max-width: 1255px;
-		min-width: 980px;
-		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -40,6 +37,7 @@ header{
 						color: #3382ba;
 						font-size: 18px;
 						text-decoration: none;
+						line-height: 1;
 
 						&:hover{
 							color: #aacc33;
@@ -54,11 +52,16 @@ header{
 			display: block;
 			color: #fff;
 			font-size: 21px;
-			padding: 21% 2.8%;
+			padding: 1.5% 2.6%;
 			text-decoration: none;
 			line-height: 1;
 			border-radius: 35px;
 			letter-spacing: 0.4px;
+			@-moz-document url-prefix() {
+				&{
+					padding: 20% 2.8%;
+				}
+			}
 
 			span{
 				border-bottom: 1px dashed #fff;
