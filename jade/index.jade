@@ -8,18 +8,20 @@ html(lang="ru")
 		meta(name="description" content="")
 		meta(name="keywords" content="")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel='stylesheet', href='../styles/build/build.css')
+		
 	body
-		.wrapper
-			header
-				.wrapper
-					img(src="../img/logo.png")
-					nav#menu
-						ul
-							li: a(href="#") Услуги
-							li: a(href="#") Технологии
-							li: a(href="#") Акция
-							li: a(href="#") Контакты
-					a.btn(href="#form") Отправить заявку
-			main.content
-			footer
+		header
+			.wrapper
+				img(src="../img/logo.png")
+				nav#menu
+					ul
+						li: a(href="#") Услуги
+						li: a(href="#") Технологии
+						li: a(href="#") Акция
+						li: a(href="#") Контакты
+				a.btn(href="#form")
+					span Отправить заявку
+		main.content
+		footer
 		

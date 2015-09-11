@@ -1,0 +1,68 @@
+/*
+ * Styles from header
+ *
+ * @author Andrey Chechkin
+ * @license GNU/AGPLv3
+ * @see {@link https://www.gnu.org/licenses/agpl-3.0.txt|License}
+ */
+
+@import "../mixins.less";
+
+header{
+	@height: 85px;
+
+	background: #fff;
+	height: @height;
+
+	.wrapper{
+		width: 90%;
+		max-width: 1255px;
+		min-width: 980px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: @height;
+
+		#menu{
+			width: 47%;
+
+			ul{
+				li{
+					display: inline-block;
+					margin-right: 12%;
+
+					&:last-child{
+						margin-right: 0;
+					}
+
+					a{
+						color: #3382ba;
+						font-size: 18px;
+						text-decoration: none;
+
+						&:hover{
+							color: #aacc33;
+						}
+					}//a
+				}//li
+			}//ul
+		}//menu
+
+		.btn{
+			background-image: linear-gradient(to bottom, #63ACE1 0%, #3482BA 100%);
+			display: block;
+			color: #fff;
+			font-size: 21px;
+			padding: 21% 2.8%;
+			text-decoration: none;
+			line-height: 1;
+			border-radius: 35px;
+			letter-spacing: 0.4px;
+
+			span{
+				border-bottom: 1px dashed #fff;
+			}
+		}
+	}//wrapper
+}//header
