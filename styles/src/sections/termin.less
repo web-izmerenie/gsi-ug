@@ -1,0 +1,49 @@
+@import "../mixins.less";
+@import "../variables.less";
+
+.termin{
+	.bg('termin-bg.jpg', no-repeat center center / cover);
+	height: 440px;
+
+	.wrapper{
+		width: 940px;
+		color: #fff;
+
+		h1{
+			font-family: robotto-thin;
+			font-size: 40px;
+			text-align: center;
+			padding: 40px 0 33px;
+			line-height: 34px;
+			color: #fff;
+		}
+
+		.text{
+			@left: 47px;
+
+			margin: 0 auto;
+
+			.img{
+				.size(215px);
+				border-radius: 100%;
+				border: 12px solid #fff;
+				display: inline-block;
+				background: #f2f2f2;
+				vertical-align: middle;
+				position: relative;
+				left: @left;
+			}
+
+			.termin-block{
+				background: #418ec4;
+				display: inline-block;
+				vertical-align: middle;
+				padding: 34px 33px 50px (@left + 20);
+				border-radius: 12px;
+				line-height: 21px;
+
+				b{font-size: 30px;}
+			}
+		}
+	}//wrapper
+}//termin
