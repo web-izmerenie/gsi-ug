@@ -1,0 +1,60 @@
+/*
+ * Styles from advantages block
+ *
+ * @author Andrey Chechkin
+ * @license GNU/AGPLv3
+ * @see {@link https://www.gnu.org/licenses/agpl-3.0.txt|License}
+ */
+
+@import "../mixins.less";
+
+.advantages-of-material{
+	background: #3382ba;
+	color: #fff;
+	padding: 34px 0 0;
+
+	.wrapper{
+		h1{
+			text-align: center;
+			color: #fff;
+			font-family: robotto-thin;
+			font-size: 40px;
+		}
+
+		p{
+			font-family: robotto-bold;
+			font-size: 18px;
+			line-height: 22px;
+		}
+
+		.advantages-main{
+			margin: 54px auto;
+			width: 100%;
+			max-width: 1105px;
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			text-align: center;
+
+			li{
+				width: 222px;
+
+				p{margin: 27px 0px 20px;}
+			}
+			}//advantages-main
+
+			.advantages-other{
+				border-top: 2px solid #fff;
+				padding: 65px 0;
+				display: flex;
+				align-items: baseline;
+				justify-content: space-between;
+
+				li{
+					width: 16%;
+
+					p{margin-bottom: 24px;}
+				}
+				}//advantages-other
+		}//wrapper
+	}//advantages-of-material
