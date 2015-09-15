@@ -1,0 +1,88 @@
+/*
+ * Styles from contacts block
+ *
+ * @author Andrey Chechkin
+ * @license GNU/AGPLv3
+ * @see {@link https://www.gnu.org/licenses/agpl-3.0.txt|License}
+ */
+
+#contacts{
+		background: linear-gradient(to bottom, #E7E6E4 0%, #F7F7F7 100%);
+		padding: 37px 0px 93px;
+
+		.wrapper{
+			max-width: 1164px;
+
+			h1{
+				font-family: robotto-thin;
+				color: #393939;
+				text-align: center;
+			}
+
+			.inline{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			img{
+				width: 22.5%;
+				padding-right: 2%;
+			}
+
+			ul{
+				width: 39.9%;
+				margin-top: -5px;
+
+				li{
+					font-family: robotto-m;
+					font-size: 30px;
+
+					> span{
+						font-family: robotto-thin;
+						font-size: 18px;
+					}
+
+					&:nth-child(2){
+						font-family: robotto-black;
+					}
+
+					a{
+						font-family: robotto-thin;
+					}
+
+					.btn{
+						font-family: robotto-m;
+						font-size: 21px;
+						width: 248px;
+						height: 57px;
+						line-height: 52px;
+						margin-top: 20px;
+						margin-left: -6px;
+					}
+				}
+			}
+
+			.text{
+				@color: #aacc33;
+
+				width: 32%;
+				border-radius: 12px;
+				background: @color;
+				color: #fff;
+				font-family: robotto-m;
+				font-size: 18px;
+				padding: 30px;
+				box-sizing: border-box;
+				border-radius: 18px;
+				position: relative;
+
+				&::after{
+					content: "";
+					position: absolute;
+					top: 75px;
+					left: -40px;
+					border: 20px solid transparent;
+					border-right: 20px solid @color;
+				}
+			}
+			}//wrapper
+}//contacts

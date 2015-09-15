@@ -14,6 +14,7 @@
 .fontAdd('robotto-thin', 'roboto-thin-webfont');
 .fontAdd('robotto-bold', 'roboto-bold-webfont');
 .fontAdd('robotto-black', 'roboto-black-webfont');
+.fontAdd('robotto-m', 'roboto-medium-webfont');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -79,6 +80,43 @@ body {
 		margin: 0 auto;
 	}//wrapper
 
+	a{
+		color: #3382ba;
+		text-decoration: none;
+
+		&:hover{
+			color: #aacc33;
+		}
+	}
+
+	.btn{
+		background-image: linear-gradient(to bottom, #63ACE1 0%, #3482BA 100%);
+		display: block;
+		color: #fff;
+		font-size: 21px;
+		text-decoration: none;
+		border-radius: 35px;
+		letter-spacing: 0.4px;
+		font-family: robotto-m;
+		width: 20%;
+		height: 65%;
+		text-align: center;
+		line-height: 2.5;
+
+		@media (max-width: 1280px){
+			font-size: 18px;
+			line-height: 3;
+		}
+
+		span{
+			border-bottom: 1px dashed #fff;
+		}
+
+		&:hover{
+			color: #fff;
+		}
+	}
+
 	@import "./sections/header.less";
 
 	.content{
@@ -89,6 +127,7 @@ body {
 		@import "./sections/video.less";
 		@import "./sections/sales.less";
 		@import "./sections/your-benefits.less";
+		@import "./sections/contacts.less";
 
 		h1{
 			color: #393939;
