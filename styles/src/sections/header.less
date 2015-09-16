@@ -9,11 +9,15 @@
 @import "../mixins.less";
 
 header{
+	min-width: @min-width;
 	@height: 86px;
 
 	background: #fff;
 	height: @height;
 	padding-bottom: 2px;
+	position: fixed;
+	width: 100%;
+	z-index: 90;
 
 	.wrapper{
 		display: flex;

@@ -10,7 +10,9 @@
 $ = require('jquery')
 
 #include sections
+header = require('./sections/header.coffee')
 application = require('./sections/application.coffee')
 
 $ ->
+	header.init()
 	application.init()
