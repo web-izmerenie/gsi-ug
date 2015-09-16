@@ -12,7 +12,9 @@ $ = require('jquery')
 #include sections
 header = require('./sections/header.coffee')
 application = require('./sections/application.coffee')
+form = require('./sections/form.coffee')
 
 $ ->
 	header.init()
 	application.init()
+	form.init()

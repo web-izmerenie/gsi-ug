@@ -1,0 +1,15 @@
+.overlay
+#form.animated
+	form
+		label Ваше имя:
+		input(type="text" name="name" maxlength="45" required)
+		label Телефон или e-mail:
+		input(type="text" name="tel" maxlength="45" required)
+		label Опишите вашу задачу:
+		textarea(type="text" name="message" maxlength="300" required)
+		.error Сообщение не отправлено. Пожалуйста, заполните все поля».
+		a.btn(href="#submit")
+			span Отправить заявку
+	.sucsess.
+			Спасибо за ваше обращение.#[br] 
+			Мы свяжемся с вами в ближайшее время.

@@ -74,23 +74,6 @@ body {
 	margin: 0;
 	padding: 0;
 
-	.wrapper{
-		width: 90%;
-		max-width: 1255px;
-		min-width: 980px;
-		margin: 0 auto;
-	}//wrapper
-
-	a{
-		color: #3382ba;
-		text-decoration: none;
-		transition: color 0.4s ease;
-
-		&:hover{
-			color: #aacc33;
-		}
-	}
-
 	.btn{
 		background-image: linear-gradient(to bottom, #63ACE1 0%, #3482BA 100%);
 		display: block;
@@ -119,6 +102,23 @@ body {
 		}
 	}
 
+	.wrapper{
+		width: 90%;
+		max-width: 1255px;
+		min-width: 980px;
+		margin: 0 auto;
+	}//wrapper
+
+	a{
+		color: #3382ba;
+		text-decoration: none;
+		transition: color 0.4s ease;
+
+		&:hover{
+			color: #aacc33;
+		}
+	}
+
 	@import "./sections/header.less";
 
 	.content{
@@ -141,4 +141,5 @@ body {
 		}//content
 
 		@import "./sections/footer.less";
+		@import "./sections/form.less";
 }
