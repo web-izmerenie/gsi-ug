@@ -1,0 +1,36 @@
+/*
+ * Styles from footer
+ *
+ * @author Andrey Chechkin
+ * @license GNU/AGPLv3
+ * @see {@link https://www.gnu.org/licenses/agpl-3.0.txt|License}
+ */
+
+@import "../mixins.less";
+
+footer{
+	@height: 85px;
+
+	background: #2c2c2e;
+	height: @height;
+	line-height: @height - 1;
+	color: #fff;
+
+	.wrapper{
+		.copy{
+			float: left;
+			font-family: robotto-light;
+		}
+		.develop{
+			float: right;
+			a{
+				color: #fff;
+				text-transform: uppercase;
+				font-family: robotto-m;
+				font-size: 14px;
+				.bg('wi.png', no-repeat right center);
+				padding-right: 20px;
+			}
+		}
+		}//wrapper
+}//footer
