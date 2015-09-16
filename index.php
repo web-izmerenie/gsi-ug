@@ -2,99 +2,26 @@
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle('Главная');
 ?>
-<section id="application">
-	<div class="wrapper">
-		<h1>Гидроизоляция «жидкой резиной»</h1>
-		<ul>
-			<li>
-				<div class="hover">
-					<div class="text"><img src="<?=$tplPath;?>/img/application1.png">
-						<p>Жилых и коммерческих <br>
-							зданий
-						</p>
-					</div>
-					<div class="hide animated">
-						<ul>
-							<li>Кровля</li>
-							<li>Плиты перекрытий, несущих <br>
-								конструкций и стен
-							</li>
-							<li>Фундаменты и подвалы</li>
-							<li>Балконы и террасы</li>
-							<li>Трубопроводы и подземные<br>
-								коммуникации
-							</li>
-						</ul>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="hover">
-					<div class="text"><img src="<?=$tplPath;?>/img/application2.png">
-						<p>Частного сектора</p>
-					</div>
-					<div class="hide animated">
-						<ul>
-							<li>Крыша</li>
-							<li>Стены и перекрытия</li>
-							<li>Фундаменты и подвалы</li>
-							<li>Балконы и террасы</li>
-							<li>Трубопроводы и подземные <br>
-								коммуникации
-							</li>
-							<li>Водяные баки, водостоки, <br>
-								бассейны, пруды и другие водные <br>
-								сооружения
-							</li>
-						</ul>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="hover">
-					<div class="text"><img src="<?=$tplPath;?>/img/application3.png">
-						<p>Промышленных <br>
-							объектов
-						</p>
-					</div>
-					<div class="hide animated">
-						<ul>
-							<li>Кровля</li>
-							<li>Плиты перекрытий, несущих <br>
-								конструкций и стен
-							</li>
-							<li>Подземные коммуникации, <br>
-								трубопроводы, тоннели и др.
-							</li>
-							<li>Мосты, каналы, отстойники и другие <br>
-								сооружения подачи и сбора воды
-							</li>
-							<li> Подводящие железнодорожные и <br>
-								 автомобильные дороги и др.
-							</li>
-						</ul>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-</section>
-<section id="termin">
-	<div class="wrapper">
-		<h1>
-			В работе мы используем современный
-			высокотехнологичный материал
-		</h1>
-		<div class="text">
-			<div class="img"></div>
-			<div class="termin-block"><b>«Жидкая резина»</b> — универсальный защитный материал,<br>
-				представляющий собой битумно-полимерную эмульсию в жидком виде. При<br>
-				механическом распылении или нанесении вручную она застывает и преобразуется<br>
-				в плотную «резиновую» водонепроницаемую мембрану.
-			</div>
-		</div>
-	</div>
-</section>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"COMPONENT_TEMPLATE" => ".default",
+		"AREA_FILE_SHOW" => "page",
+		"AREA_FILE_SUFFIX" => "application",
+		"EDIT_TEMPLATE" => ""
+	)
+);?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"COMPONENT_TEMPLATE" => ".default",
+		"AREA_FILE_SHOW" => "page",
+		"AREA_FILE_SUFFIX" => "termin",
+		"EDIT_TEMPLATE" => ""
+	)
+);?>
 <section id="advantages-of-material">
 	<div class="wrapper">
 		<h1>Преимущества материала</h1>
