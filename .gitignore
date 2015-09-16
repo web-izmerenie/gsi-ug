@@ -26,6 +26,8 @@ smsc
 html
 styles/build
 scripts/build
+.DS_Store
+bower
 
 # bitrix tmp dirs
 bitrix/cache
