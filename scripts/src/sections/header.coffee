@@ -11,6 +11,7 @@ $ = require('jquery')
 
 module.exports.init = ->
 	$header = $('header')
+	$menuItem = $header.find '#menu li a'
 
 	window.onscroll = ->
 		$scrolLeft = $('html').scrollLeft()
@@ -18,3 +19,13 @@ module.exports.init = ->
 		$scrolLeft = -$scrolLeft
 		$header.css
 			'margin-left': $scrolLeft
+
+	$menuItem.click (e) ->
+		e.preventDefault()
+		$href = $(this).attr 'href'
+		$href = $($href)
+		$target = $href.offset().top - 60
+
+		$('html, body').animate
+			scrollTop: $target
+			1000
