@@ -29,7 +29,8 @@ module.exports.init = ->
 				$form.trigger 'reset'
 				)
 
-	$callForm.click ->
+	$callForm.click (e) ->
+		e.preventDefault()
 		$overlay.fadeIn()
 		$formBody.fadeIn()
 
