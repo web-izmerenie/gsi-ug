@@ -22,122 +22,26 @@ $APPLICATION->SetTitle('Главная');
 		"EDIT_TEMPLATE" => ""
 	)
 );?>
-<section id="advantages-of-material">
-	<div class="wrapper">
-		<h1>Преимущества материала</h1>
-		<ul class="advantages-main">
-			<li><img src="<?=$tplPath;?>/img/advantages1.png">
-				<p>Быстро</p>
-				<div class="text">
-					Быстро монтируется,
-					быстро сохнет и отвердевает,
-					намертво соединяясь с <br>поверхностью.
-				</div>
-			</li>
-			<li><img src="<?=$tplPath;?>/img/advantages2.png">
-				<p>Без швов</p>
-				<div class="text">
-					Бесшовное монолитное
-					водонепроницаемое
-					полотно по всей
-					поверхности.
-				</div>
-			</li>
-			<li><img src="<?=$tplPath;?>/img/advantages3.png">
-				<p>Для сложных поверхностей</p>
-				<div class="text">
-					Для поверхностей с любыми формами,
-					труднодоступных мест и влажных покрытий.
-				</div>
-			</li>
-			<li><img src="<?=$tplPath;?>/img/advantages4.png">
-				<p>Долгая эксплуатация</p>
-				<div class="text">
-					Срок эксплуатации гидроизоляции
-					«жидкая резина» от 25 до 40 лет.
-				</div>
-			</li>
-		</ul>
-		<ul class="advantages-other">
-			<li>
-				<p>Пожаробезопасность</p>
-				<div class="text">
-					Гидроизоляция
-					укладывается без применения огня.
-				</div>
-			</li>
-			<li>
-				<p>Звукоизоляция</p>
-				<div class="text">
-					Гасит звуки на высоких
-					частотах и существенно поглощает на низких.
-				</div>
-			</li>
-			<li>
-				<p>Ремонтопригодность</p>
-				<div class="text">Быстро и хорошо ремонтируется при механических повреждениях.</div>
-			</li>
-			<li>
-				<p>Экономия средств</p>
-				<div class="text">Небольшие расходы на обслуживание<br>
-					и ремонт в долгосрочной перспективе.
-				</div>
-			</li>
-			<li>
-				<p>Экологически безопасно</p>
-				<div class="text">
-					Не токсичен и не
-					выделяет запаха.
-				</div>
-			</li>
-		</ul>
-	</div>
-</section>
-<section id="steps">
-	<div class="wrapper">
-		<h1>Этапы гидроизоляции</h1>
-		<ul>
-			<li><span title="1" class="number">1</span>
-				<p>Подготовка поверхности</p>
-				<div class="text">
-					Предварительно поверхность очищается от сора,
-					демонтируется или ремонтируется старое покрытие,
-					если это необходимо.
-				</div>
-			</li>
-			<li><span title="2" class="number">2</span>
-				<p>Нанесение грунтовки</p>
-				<div class="text">
-					В зависимости от размера поверхности,
-					грунтовка наносится с помощью установки<br>
-					безвоздушного напыления или малярным валиком.
-					Следующий этап начинается
-					спустя 1-3 часа после грунтования.
-
-				</div>
-			</li>
-			<li><span title="3" class="number">3</span>
-				<p>Нанесение «жидкой резины» </p>
-				<div class="text">
-					«Жидкая резина» наносится с помощью установки безвоздушного напыления,
-					которая подает битумно-латексную эмульсию и коагулянт по двум контурам.
-					При выходе они смешиваются в воздухе
-					и происходит мгновенное разрушение оболочки эмульгатора.
-					Попадая на поверхность частички битума и латекса образуют
-					плотную мембрану.
-				</div>
-			</li>
-			<li><span title="4" class="number">4</span>
-				<p>Защита гидроизоляции</p>
-				<div class="text">
-					Для защиты гидроизоляции от механических повреждений и
-					УФ излучений ее покрывают геотекстилем из полиэстера или
-					другими защитными материалами.
-				</div>
-			</li>
-		</ul>
-	</div>
-</section>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"COMPONENT_TEMPLATE" => ".default",
+		"AREA_FILE_SHOW" => "page",
+		"AREA_FILE_SUFFIX" => "advantages_of_material",
+		"EDIT_TEMPLATE" => ""
+	)
+);?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"COMPONENT_TEMPLATE" => ".default",
+		"AREA_FILE_SHOW" => "page",
+		"AREA_FILE_SUFFIX" => "steps",
+		"EDIT_TEMPLATE" => ""
+	)
+);?>
 <section id="video">
 	<div class="wrapper">
 		<div class="video"><img src="<?=$tplPath;?>/img/video.jpg"></div>
