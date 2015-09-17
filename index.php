@@ -38,7 +38,7 @@ $APPLICATION->SetTitle('Главная');
 	Array(
 		"COMPONENT_TEMPLATE" => ".default",
 		"AREA_FILE_SHOW" => "page",
-		"AREA_FILE_SUFFIX" => "advantages_of_material",
+		"AREA_FILE_SUFFIX" => "steps",
 		"EDIT_TEMPLATE" => ""
 	)
 );?>

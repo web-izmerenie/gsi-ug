@@ -36,6 +36,7 @@ module.exports.init = ->
 
 	$submit.click (e) ->
 		error = false
+		$urlAjax = $form.attr 'action'
 
 		e.preventDefault()
 		$form.find 'input[type="text"], textarea'
@@ -50,8 +51,16 @@ module.exports.init = ->
 				$errorMessage.css
 					opacity: 1
 			else
-				$errorMessage.css
-					opacity: 0
-				$form.hide()
-				$form.trigger 'reset'
-				$sucsess.show()
+				$.ajax
+					type: "POST"
+					url: $urlAjax
+					data: $form.serialize()
+					success: ->
+						$errorMessage.css
+							opacity: 0
+						$form.hide()
+						$form.trigger 'reset'
+						$sucsess.show()
+					error: ->
+						alert 'Произошла ошибка, форма не отправлена!'
+				return false;
