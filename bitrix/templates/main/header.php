@@ -24,7 +24,7 @@ global $tplPath;
         <nav id="menu">
           <ul>
             <li><a href="#application">Услуги</a></li>
-            <li><a href="#steps">Технологии</a></li>
+            <li><a href="#termin">Технологии</a></li>
             <li><a href="#sales">Акция</a></li>
             <li><a href="#contacts">Контакты</a></li>
           </ul>

@@ -12,15 +12,17 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<section id="sales">
-	<div class="wrapper">
-		<h1>Акция</h1>
-		<?foreach($arResult['ITEMS'] as $arItem){
-		$file = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>105, 'height'=>105), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
-			<div class="sales-item">
-				<img src="<?=$file['src'];?>">
-				<div class="text"><?=$arItem['PREVIEW_TEXT']?></div>
-			</div>
-		<?}?>
-	</div>
-</section>
+<?if(!empty($arResult['ITEMS'])){?>
+	<section id="sales">
+		<div class="wrapper">
+			<h1>Акция</h1>
+			<?foreach($arResult['ITEMS'] as $arItem){
+			$file = CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>105, 'height'=>105), BX_RESIZE_IMAGE_PROPORTIONAL, true);?>
+				<div class="sales-item">
+					<img src="<?=$file['src'];?>">
+					<div class="text"><?=$arItem['PREVIEW_TEXT']?></div>
+				</div>
+			<?}?>
+		</div>
+	</section>
+<?}?>
