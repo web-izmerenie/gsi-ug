@@ -47,7 +47,7 @@ bitrix/activities
 bitrix/activity_limit.php
 bitrix/admin
 bitrix/click.php
-bitrix/components/bitrix
+bitrix/components
 bitrix/coupon_activation.php
 bitrix/fonts
 bitrix/footer.php
