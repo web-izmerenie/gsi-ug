@@ -12,6 +12,7 @@
 *.sql
 
 Thumbs.db
+._.DS_Store
 
 bower_components
 node_modules
@@ -37,6 +38,8 @@ bitrix/tmp
 # configs (security)
 dbconfig.php
 bitrix/license_key.php
+
+index_*.php
 
 # backups
 bitrix/backup

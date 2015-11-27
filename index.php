@@ -246,6 +246,20 @@ $APPLICATION->SetTitle("Главная");
 	),
 	false
 );?>
+<section class="seo">
+	<div class="wrapper">
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:main.include",
+			"",
+			Array(
+				"AREA_FILE_SHOW" => "page",
+				"AREA_FILE_SUFFIX" => "seo",
+				"COMPONENT_TEMPLATE" => ".default",
+				"EDIT_TEMPLATE" => ""
+			)
+		);?>
+	</div>
+</section>
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
 ?>
