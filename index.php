@@ -1,6 +1,7 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
-$APPLICATION->SetTitle('Главная');
+$APPLICATION->SetPageProperty("title", "Гидроизоляция кровли крыши жидкой резиной, цена");
+$APPLICATION->SetTitle("Главная");
 ?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",

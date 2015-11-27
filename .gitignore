@@ -22,7 +22,6 @@ bitrix/templates/main/images/sprites/*/build
 bitrix/templates/main/styles/src/sprites
 .source_of_symbolic_links
 robots.txt
-smsc
 html
 styles/build
 scripts/build

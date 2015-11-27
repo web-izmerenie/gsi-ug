@@ -31,4 +31,5 @@ global $tplPath;
         </nav><a href="#form" class="btn"><span>Отправить заявку</span></a>
       </div>
     </header>
+	<!--noindex-->
     <main class="content">
